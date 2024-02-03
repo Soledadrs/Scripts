@@ -8,7 +8,7 @@ let config = {
     huweather_apiKey: "b8ce27332ef6491ca2495114596a7a1f", //和风天气APIkey,可自行前往 https://dev.heweather.com/ 进行获取(注意key类型选WebApi)
     lat_lon: "23.558453,116.2036642", //请填写经纬度,直接从谷歌地图中获取即可
     lang: "zh-tw", //语言,随意切换为您想要的语言哦(zh/zh-tw/ja/en/fr/...)
-    log: 0, //调试日志,0为不开启,1为开启,2为开启精简日志
+    log: 1, //调试日志,0为不开启,1为开启,2为开启精简日志
     timeout: 0, //超时时间,单位毫秒(1000毫秒=1秒),一般不推荐修改[为0则不限制超时时间]
     show: {
         //普通每天的
@@ -30,19 +30,19 @@ $[hourly($[month]/$[day]  -  $[hour]:00  •  $[weatherIcon]$[weather]  •  $[t
             drsg: true, //穿衣指数,
             flu: true, //感冒指数,
             comf: true, //舒适度指数,
-            cw: false, //洗车指数,
-            sport: false, //运动指数,
-            trav: false, //旅游指数,
-            uv: false, //紫外线指数,
-            air: false, //空气污染扩散条件指数,
-            ac: false, //空调开启指数,
-            ag: false, //过敏指数,
-            gl: false, //太阳镜指数,
-            mu: false, //化妆指数,
-            airc: false, //晾晒指数,
-            ptfc: false, //交通指数,
-            fsh: false, //钓鱼指数,
-            spi: false, //防晒指数
+            cw: true, //洗车指数,
+            sport: true, //运动指数,
+            trav: true, //旅游指数,
+            uv: true, //紫外线指数,
+            air: true, //空气污染扩散条件指数,
+            ac: true, //空调开启指数,
+            ag: true, //过敏指数,
+            gl: true, //太阳镜指数,
+            mu: true, //化妆指数,
+            airc: true, //晾晒指数,
+            ptfc: true, //交通指数,
+            fsh: true, //钓鱼指数,
+            spi: true, //防晒指数
         }
     }
 }
